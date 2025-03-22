@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IKImage } from "imagekitio-react";
+import Image from "./Image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -6,7 +8,7 @@ const Navbar = () => {
     <div className="w-full h-16 flex justify-between items-center">
       {/* LOGO */}
       <div className="flex gap-4 items-cente text-2xl font-bold">
-        <img className="w-8" src="./logo.png" alt="" />
+        <Image src="logo.png" w={32} h={32}></Image>
         <span>Blog</span>
       </div>
       {/* MOBILE MENU*/}
@@ -20,15 +22,29 @@ const Navbar = () => {
         </div>
         {/* MOBILE LINK LIST */}
         <div
-          className={`w-full h-screen absolute top-16 flex flex-col items-center justify-center bg-red-700 ${
+          className={`w-full h-screen absolute top-16 flex flex-col items-center justify-center gap-8 font-medium text-lg   transition-all ease-in-out ${
             open ? "-right-0" : "-right-[100%]"
           }`}
         >
-          menu
+          <a href="">Home</a>
+          <a href="">Trending</a>
+          <a href="">Most Popular</a>
+          <a href="">About</a>
+          <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+            Login
+          </button>
         </div>
       </div>
       {/* DESKTOP */}
-      <div className="hidden md:flex">D</div>
+      <div className="hidden md:flex gap-8 xl:gap-12 font-medium items-end">
+        <a href="">Home</a>
+        <a href="">Trending</a>
+        <a href="">Most Popular</a>
+        <a href="">About</a>
+        <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">
+          Login
+        </button>
+      </div>
     </div>
   );
 };
