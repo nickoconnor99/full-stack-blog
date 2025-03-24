@@ -7,11 +7,14 @@ const PostListItem = () => {
     <div className="flex flex-col xl:flex-row gap-8">
       {/* IMAGE */}
       <div className="md:hidden xl:block xl:w-1/3">
-        <Image className=" w-1/2 rounded-3xl lg:w-full" src="postImg.jpeg"></Image>
+        <Image
+          className=" w-1/2 rounded-3xl lg:w-full"
+          src="postImg.jpeg"
+        ></Image>
       </div>
       {/* DETAILS */}
       <div className="flex flex-col gap-4 xl:w-2/3">
-        <Link className="text-4xl font-semibold">
+        <Link to="/slug" className="text-4xl font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           tempore cumque explicabo,{" "}
         </Link>
