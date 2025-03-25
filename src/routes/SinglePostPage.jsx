@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import Image from "../components/Image";
 import PostMenuAction from "../components/PostMenuActions";
 import Search from "../components/Search";
+import Comments from "../components/Comments";
 
 const SinglePostPage = () => {
   return (
@@ -87,6 +88,36 @@ const SinglePostPage = () => {
             eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
             tenetur vero vel sapiente inventore magni rem excepturi qui
             voluptatibus dolore?
+          </p>{" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
+            tenetur vero vel sapiente inventore magni rem excepturi qui
+            voluptatibus dolore?
+          </p>{" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
+            tenetur vero vel sapiente inventore magni rem excepturi qui
+            voluptatibus dolore?
+          </p>{" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
+            tenetur vero vel sapiente inventore magni rem excepturi qui
+            voluptatibus dolore?
+          </p>{" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
+            tenetur vero vel sapiente inventore magni rem excepturi qui
+            voluptatibus dolore?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eaque reiciendis quasi dicta ad magnam quisquam id earum. Corporis
+            tenetur vero vel sapiente inventore magni rem excepturi qui
+            voluptatibus dolore?
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
@@ -97,9 +128,9 @@ const SinglePostPage = () => {
         </div>
         {/* MENU */}
         <div className="px-4 h-max sticky top-8">
-          <h1 className="">Author</h1>
+          <h1 className="className=mt-8 mb-4 text-sm font-medium">Author</h1>
           <div className="">
-            <div className="flex flex-row">
+            <div className="flex flex-row gap-4 mb-4">
               <Image
                 className="w-12 h-12 rounded-full object-cover"
                 src="userImg.jpeg"
@@ -108,7 +139,7 @@ const SinglePostPage = () => {
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 mt-4 mb-4">
               <Link>
                 <Image src="facebook.svg"></Image>
               </Link>
@@ -118,8 +149,8 @@ const SinglePostPage = () => {
             </div>
           </div>
           <PostMenuAction></PostMenuAction>
-          <h1>Categories</h1>
-          <div>
+          <h1 className="mt-8 mb-4 text-sm font-medium">Categories</h1>
+          <div className="flex flex-col gap-2">
             <Link>All</Link>
             <Link>Web Design</Link>
             <Link>Development</Link>
@@ -127,10 +158,11 @@ const SinglePostPage = () => {
             <Link>Search Engines</Link>
             <Link>Marketing</Link>
           </div>
-          <h1>Search</h1>
+          <h1 className="mt-8 mb-4 text-sm font-medium">Search</h1>
           <Search></Search>
         </div>
       </div>
+      <Comments></Comments>
     </div>
   );
 };
