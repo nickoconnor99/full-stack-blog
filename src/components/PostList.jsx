@@ -8,6 +8,12 @@ const PostList = () => {
       <PostListItem></PostListItem>
       <PostListItem></PostListItem>
       <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
+      <PostListItem></PostListItem>
     </div>
   );
 };
